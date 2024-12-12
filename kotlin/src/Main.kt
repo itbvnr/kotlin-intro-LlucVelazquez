@@ -6,6 +6,7 @@ fun main() {
         1 -> println(HowBigIsMyPizza())
         2 -> println(AirVolumeCalculator())
         3 -> println(IsLegalAge())
+        4 -> IsGreater()
         else -> println("no hi ha exercici")
     }
 }
@@ -30,4 +31,12 @@ fun IsLegalAge(): Boolean {
     if(age >= 18){
         return true
     } else { return false }
+}
+fun IsGreater() {
+    println("Posa dos numeros enters")
+    val num1 = readln().toInt()
+    val num2 = readln().toInt()
+    if (num1 > num2){println("El numero 1 es mes gran") }
+    else if (num1 == num2){ println("Els numeros son iguals") }
+    else {println("El numero 2 es mes gran")}
 }
